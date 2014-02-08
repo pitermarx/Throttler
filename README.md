@@ -1,4 +1,4 @@
-### _Project_
+### _Throttle_
 
 _A simple Throttle class that can throttle a method with the signature Action&lt;List&lt;T&gt;&gt;_
 
