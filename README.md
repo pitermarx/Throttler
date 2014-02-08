@@ -1,6 +1,6 @@
 ### _Project_
 
-_Description: A simple Throttle class that can throttle a method with the signature Action<List<T>>_
+_A simple Throttle class that can throttle a method with the signature Action&lt;List&lt;T&gt;&gt;_
 
 #### Project Setup
 
