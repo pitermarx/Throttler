@@ -1,4 +1,4 @@
-### _Throttler_
+### [_Throttler_](http://pitermarx.github.io/Throttler)
 
 _A simple Throttle class that can throttle a method with the signature Action&lt;List&lt;T&gt;&gt;_
 
