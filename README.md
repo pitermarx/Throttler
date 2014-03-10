@@ -28,4 +28,4 @@ throttledAction.Call(new List<int>(5));
 throttledAction.Flush();
 ```
 
-[![Build status](https://ci.appveyor.com/api/projects/status?id=ue5h2bp6sgtm23bx)](https://ci.appveyor.com/project/throttler)
+[![Build status](https://ci.appveyor.com/api/projects/status/ue5h2bp6sgtm23bx)](https://ci.appveyor.com/project/pitermarx/throttler)
