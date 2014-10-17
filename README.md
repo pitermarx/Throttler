@@ -26,6 +26,13 @@ throttledAction.Call(new List<int>(5));
 
 // you can flush manually to...
 throttledAction.Flush();
+
+// if an exception occurs while calling the action, the OnError method is called
+throttledAction.OnError = (exception, ints) =>
+    {
+        Log.Error("An error occurred while processing values", exception);
+        DoFallbackAction(ints);
+    };
 ```
 
 [![Build status](https://ci.appveyor.com/api/projects/status/ue5h2bp6sgtm23bx)](https://ci.appveyor.com/project/pitermarx/throttler)
