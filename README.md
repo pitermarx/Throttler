@@ -30,8 +30,10 @@ throttledAction.Flush();
 // if an exception occurs while calling the action, the OnError method is called
 throttledAction.OnError = (exception, ints) =>
     {
+        /* Example error handling
         Log.Error("An error occurred while processing values", exception);
         DoFallbackAction(ints);
+        */
     };
 ```
 
