@@ -4,30 +4,40 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
     <title>Throttler by pitermarx</title>
-
     <link rel="stylesheet" href="stylesheets/styles.css">
     <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script src="javascripts/respond.js"></script>
     <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
   </head>
   <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/pitermarx/Throttler">View On GitHub</a></li>
+          <li class="downloads"><a href="https://github.com/pitermarx/Throttler/zipball/master">ZIP</a></li>
+          <li class="downloads"><a href="https://github.com/pitermarx/Throttler/tarball/master">TAR</a></li>
+          <li class="title">DOWNLOADS</li>
+        </nav>
+      </div><!-- end header -->
+
     <div class="wrapper">
-      <header>
-        <h1>Throttler</h1>
-        <p>A simple Throttle class that can throttle a method with the signature Action&lt;List&lt;T&gt;&gt;</p>
 
-        <p class="view"><a href="https://github.com/pitermarx/Throttler">View the Project on GitHub <small>pitermarx/Throttler</small></a></p>
-
-
-        <ul>
-          <li><a href="https://github.com/pitermarx/Throttler/zipball/master">Download <strong>ZIP File</strong></a></li>
-          <li><a href="https://github.com/pitermarx/Throttler/tarball/master">Download <strong>TAR Ball</strong></a></li>
-          <li><a href="https://github.com/pitermarx/Throttler">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
       <section>
+        <div id="title">
+          <h1>Throttler</h1>
+          <p>A simple Throttle class that can throttle a method with the signature Action&lt;List&lt;T&gt;&gt;</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/pitermarx">pitermarx</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+
         <h4>
 <a name="project-setup" class="anchor" href="#project-setup"><span class="octicon octicon-link"></span></a>Project Setup</h4>
 
@@ -55,16 +65,22 @@ is licensed under the <a href="http://opensource.org/licenses/mit-license.php">M
 
 <span class="c1">// you can flush manually to...</span>
 <span class="n">throttledAction</span><span class="p">.</span><span class="n">Flush</span><span class="p">();</span>
+
+<span class="c1">// if an exception occurs while calling the action, the OnError method is called</span>
+<span class="n">throttledAction</span><span class="p">.</span><span class="n">OnError</span> <span class="p">=</span> <span class="p">(</span><span class="n">exception</span><span class="p">,</span> <span class="n">ints</span><span class="p">)</span> <span class="p">=&gt;</span>
+    <span class="p">{</span>
+        <span class="cm">/* Example error handling</span>
+<span class="cm">        Log.Error("An error occurred while processing values", exception);</span>
+<span class="cm">        DoFallbackAction(ints);</span>
+<span class="cm">        */</span>
+    <span class="p">};</span>
 </pre></div>
 
 <p><a href="https://ci.appveyor.com/project/throttler"><img src="https://ci.appveyor.com/api/projects/status?id=ue5h2bp6sgtm23bx" alt="Build status"></a></p>
       </section>
-      <footer>
-        <p>This project is maintained by <a href="https://github.com/pitermarx">pitermarx</a></p>
-        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
-      </footer>
+
     </div>
-    <script src="javascripts/scale.fix.js"></script>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
     
   </body>
 </html>
