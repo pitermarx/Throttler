@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Throttler
+namespace pitermarx.Throttler
 {
     public class Throttler<T>
     {

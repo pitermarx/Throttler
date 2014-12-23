@@ -2,12 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading;
-
 using NUnit.Framework;
-
 using Ploeh.AutoFixture;
+using Throttler;
 
-namespace Throttler
+namespace pitermarx.Throttler
 {
     [TestFixture]
     public class ThrottlerTests
