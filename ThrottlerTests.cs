@@ -4,7 +4,6 @@ using System.Linq;
 using System.Threading;
 using NUnit.Framework;
 using Ploeh.AutoFixture;
-using Throttler;
 
 namespace pitermarx.Throttler
 {
